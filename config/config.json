@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "cole-project-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/coleProject/ColeProjectWebPart.js",
+          "manifest": "./src/webparts/coleProject/ColeProjectWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "google": {
+      "path": "https://www.gstatic.com/charts/loader.js",
+      "globalName": "google"
+    },
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jQuery"
+    },
+    "bootstrap": {
+      "path": "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "globalName": "bootstrap"
+    }
+  },
+  "localizedResources": {
+    "ColeProjectWebPartStrings": "lib/webparts/coleProject/loc/{locale}.js"
+  }
+}

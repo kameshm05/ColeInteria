@@ -1,0 +1,206 @@
+/*! workbench */
+#workbenchPageContent {
+  left: -30px !important;
+  max-width: 1364px !important;
+}
+/* workbench */
+
+.container-sec-1 {
+  /* display: flex; */
+  overflow: auto;
+  /* justify-content: space-around; */
+  padding: 20px;
+  text-align: center;
+  margin-top: 25vh;
+}
+
+.container {
+  display: flex;
+}
+.section-1 {
+  display: inline-block;
+}
+/* .container-sec-2 {
+  text-align: center;
+} */
+.Canvas,
+.CanvasZone {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.CanvasZone > div {
+  max-width: 100% !important;
+}
+.section-1 h3 {
+  text-align: center;
+}
+.Chart {
+  display: inline-block;
+  box-shadow: 1px 1px 5px #d4d4d4;
+  padding: 12px;
+  border-radius: 5px;
+}
+button#submitBtn {
+  margin-left: 20px;
+  background: #becc1f;
+  border: none;
+  color: #fff;
+  padding: 1px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -5px;
+}
+.header {
+  display: flex;
+}
+input#datePicker {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.legend-section {
+  width: 100px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+.green,
+.grey {
+  position: relative;
+  margin-top: 5px;
+}
+.green::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #becc1f;
+  position: absolute;
+  border-radius: 3px;
+  left: -30px;
+}
+.grey::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #9a9b9d;
+  position: absolute;
+  left: -30px;
+  border-radius: 3px;
+}
+.Chart {
+  margin: 0 2px;
+}
+.container-sec-1 {
+  width: 100%;
+}
+@media only screen and (min-width: 3800px) {
+  .Chart {
+    margin: 0 30px;
+  }
+  .green:before,
+  .grey:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 3px;
+    left: -50px;
+    top: -10px;
+  }
+
+  .grey {
+    margin-bottom: 30px;
+  }
+  .container-sec-1 {
+    width: 75%;
+    margin: auto;
+  }
+}
+/* .blue::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #00b8b5;
+  position: absolute;
+  left: -30px;
+  border-radius: 3px;
+}
+.Tgreen::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #00d962;
+  position: absolute;
+  left: -30px;
+  border-radius: 3px;
+}
+.pink::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #ff3333;
+  position: absolute;
+  left: -30px;
+  border-radius: 3px;
+}
+.orange::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #fcc41c;
+  position: absolute;
+  left: -30px;
+  border-radius: 3px;
+}
+.Violet::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #ed1cfc;
+  position: absolute;
+  left: -30px;
+  border-radius: 3px;
+} */
+.item {
+  display: inline-block;
+  width: 98vw;
+}
+/* .caro {
+  display: flex;
+  width: 200vw;
+  position: relative;
+  animation-name: caro;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.blue,
+.Tgreen,
+.pink,
+.orange,
+.Violet {
+  position: relative;
+  margin-top: 5px;
+}
+@keyframes caro {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: -100vw;
+    top: 0px;
+  }
+  50% {
+    left: -100vw;
+    top: 0px;
+  }
+  75% {
+    left: 0;
+    top: 0px;
+  }
+  100% {
+    left: 0;
+    top: 0px;
+  }
+}
+.weekWise .container-sec-1 {
+  margin-top: -170px;
+} */

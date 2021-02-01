@@ -1,0 +1,707 @@
+  
+  const canvas = <HTMLCanvasElement> document.getElementById('myChart');
+  const ctx = canvas.getContext('2d');
+  var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['Madhesh Maasi'], 
+        datasets: [{
+            label: 'Leads Target',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [LeadsTarget[0].TargetValue]
+        },{
+          label: 'Leads Acheivements',
+          backgroundColor: 'rgb(110, 187, 111)',
+          borderColor: 'rgb(110, 187, 111)',
+          data: [madLeads.length,0]
+      },]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+const canvas1 = <HTMLCanvasElement> document.getElementById('myChart-2');
+const ctx1 = canvas1.getContext('2d');
+var chart1 = new Chart(ctx1, {
+  // The type of chart we want to create
+  type: 'bar',
+
+  // The data for our dataset
+  data: {
+      labels: ['Madhesh Maasi'],
+      datasets: [{
+          label: 'MCI Target',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: [MCITarget[0].TargetValue]
+      },{
+        label: 'MCI Acheivements',
+        backgroundColor: 'rgb(110, 187, 111)',
+        borderColor: 'rgb(110, 187, 111)',
+        data: [madMCI.length,0]
+    },]
+  },
+
+  // Configuration options go here
+  options: {}
+});
+  
+
+   <div class="ChartContainer">
+      <canvas id="myChart" width="400"></canvas>
+      <canvas id="myChart-2" width="400" height="400"></canvas>
+      </div>
+
+
+
+
+
+
+
+
+
+      //google Chart
+      arrayToDataTable([ 
+    ['Task', 'Hours per Day'], 
+    ['Work', 11], 
+    ['Eat', 2], 
+    ['Commute', 2], 
+    ['Watch TV', 2], 
+    ['Sleep', 7] ]);
+  const options = {
+    title: 'My Daily Activities',
+    pieHole: 0.4,
+  };
+
+
+
+
+
+    // let Target = await sp.web.lists.getByTitle("Target").items.select("Target/Id","Target/Title","TargetValue").expand("Target").getAll();
+  // console.log(Target);
+  // const MCITarget = Target.filter((tar)=>{return tar.Target.Title=="MCI Target"});
+  // console.log(MCITarget[0].TargetValue);
+  // const LeadsTarget = Target.filter((tar)=>{return tar.Target.Title=="Leads Target"});
+  // console.log(LeadsTarget[0].TargetValue);
+
+
+
+
+
+
+        <div class="legend-section">
+      <div class="green"><span></span>Target</div>
+      <div class="grey"><span></span>Achievement</div>
+      </div></div>
+      <div class="container-sec-1">
+      <div class="section-1">
+      <h3>Madhesh Maasi</h3>
+     <div class="container">
+      <div class="Chart" id="chart_div"></div>
+      <div class="Chart" id="chart_div2"></div>
+    </div>
+    </div>
+    <div class="section-1">
+      <h3>Kamesh M</h3>
+    <div class="container"> 
+      <div class="Chart" id="chart_div3"></div>
+      <div class="Chart" id="chart_div4"></div>
+    </div>
+    </div>
+    <div class="section-1">
+      <h3>Kali Muthu</h3>
+    <div class="container">
+       <div class="Chart" id="chart_div5"></div>
+       <div class="Chart" id="chart_div6"></div>
+       </div>
+       </div>
+     </div>
+    <div class="container-sec-2"> 
+    <div class="section-1">
+      <h3>Chandru D</h3>
+     <div class="container">
+      <div class="Chart" id="chart_div7"></div>
+      <div class="Chart" id="chart_div8"></div>
+      </div>
+      </div>
+      <div class="section-1">
+      <h3>Vinoth C</h3> 
+     <div class="container">
+      <div class="Chart" id="chart_div9"></div>
+      <div class="Chart" id="chart_div10"></div>
+      </div>
+      </div>
+     
+     </div> 
+
+
+
+         <div id="carouselExampleIndicators" class="owl-carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="..." alt="First slide">
+      <div class="header">
+      <div class="date-section"><input type="date" id="datePicker"><button class="btn btn-primary" id="submitBtn">Submit</button>
+      <input type="week" class="weekPicker">
+      </div>
+      <div class="legend-section">
+      <div class="green"><span></span>Target</div>
+      <div class="grey"><span></span>Achievement</div>
+      </div></div>
+      <div class="container-sec-1">
+      <div class="section-1">
+      <h3>Madhesh Maasi</h3>
+     <div class="container">
+      <div class="Chart" id="chart_div"></div>
+      <div class="Chart" id="chart_div2"></div>
+    </div>
+    </div>
+    <div class="section-1">
+      <h3>Kamesh M</h3>
+    <div class="container"> 
+      <div class="Chart" id="chart_div3"></div>
+      <div class="Chart" id="chart_div4"></div>
+    </div>
+    </div>
+    <div class="section-1">
+      <h3>Kali Muthu</h3>
+    <div class="container">
+       <div class="Chart" id="chart_div5"></div>
+       <div class="Chart" id="chart_div6"></div>
+       </div>
+       </div>
+     </div>
+    <div class="container-sec-2"> 
+    <div class="section-1">
+      <h3>Chandru D</h3>
+     <div class="container">
+      <div class="Chart" id="chart_div7"></div>
+      <div class="Chart" id="chart_div8"></div>
+      </div>
+      </div>
+      <div class="section-1">
+      <h3>Vinoth C</h3> 
+     <div class="container">
+      <div class="Chart" id="chart_div9"></div>
+      <div class="Chart" id="chart_div10"></div>
+      </div>
+      </div>
+     
+     </div>  
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Second slide">
+      <div class="header">
+      <div class="date-section"><input type="date" id="datePicker"><button class="btn btn-primary" id="submitBtn">Submit</button>
+      <input type="week" class="weekPicker">
+      </div>
+      <div class="legend-section">
+      <div class="green"><span></span>Target</div>
+      <div class="grey"><span></span>Achievement</div>
+      </div></div>
+      <div class="container-sec-1">
+      <div class="section-1">
+      <h3>Madhesh Maasi</h3>
+     <div class="container">
+      <div class="Chart" id="chart_div"></div>
+      <div class="Chart" id="chart_div2"></div>
+    </div>
+    </div>
+    <div class="section-1">
+      <h3>Kamesh M</h3>
+    <div class="container"> 
+      <div class="Chart" id="chart_div3"></div>
+      <div class="Chart" id="chart_div4"></div>
+    </div>
+    </div>
+    <div class="section-1">
+      <h3>Kali Muthu</h3>
+    <div class="container">
+       <div class="Chart" id="chart_div5"></div>
+       <div class="Chart" id="chart_div6"></div>
+       </div>
+       </div>
+     </div>
+    <div class="container-sec-2">
+    <div class="section-1">
+      <h3>Chandru D</h3>
+     <div class="container">
+      <div class="Chart" id="chart_div7"></div>
+      <div class="Chart" id="chart_div8"></div>
+      </div>
+      </div>
+      <div class="section-1">
+      <h3>Vinoth C</h3> 
+     <div class="container">
+      <div class="Chart" id="chart_div9"></div>
+      <div class="Chart" id="chart_div10"></div>
+      </div>
+      </div>
+     
+     </div>  
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    <div class="item weekWise">
+//    <h3 class="text-center">Last Week</h3>
+//    <div class="legend-section">
+//     <div class="grey"><span></span>Target</div>
+//     <div class="blue"><span></span>Madhesh Maasi</div>
+//     <div class="Tgreen"><span></span>Kamesh M</div>
+//     <div class="pink"><span></span>kali muthu</div>
+//     <div class="orange"><span></span>Chandru D</div>
+//     <div class="Violet"><span></span>Vinoth C</div>
+//     </div> 
+//    <div class="container-sec-1">
+//    <div class="section-1">
+
+//   <div class="container">
+//    <div class="Chart" id="weekChart1"></div>
+//    <div class="Chart" id="weekChart2"></div>
+//  </div>
+//  </div>
+ 
+ 
+//   </div> 
+ 
+//   </div>
+
+
+
+
+
+    <div class="section-1">
+    <h3>Madhesh Maasi</h3>
+   <div class="container">
+    <div class="Chart" id="chart_div"></div>
+    <div class="Chart" id="chart_div2"></div>
+  </div>
+  </div>
+  <div class="section-1">
+    <h3>Kamesh M</h3>
+  <div class="container"> 
+    <div class="Chart" id="chart_div3"></div>
+    <div class="Chart" id="chart_div4"></div>
+  </div>
+  </div>
+  <div class="section-1">
+    <h3>Kali Muthu</h3>
+  <div class="container">
+     <div class="Chart" id="chart_div5"></div>
+     <div class="Chart" id="chart_div6"></div>
+     </div>
+     </div>s
+
+
+
+
+
+       <div class="container-sec-2"> 
+  <div class="section-1">
+    <h3>Chandru D</h3>
+   <div class="container">
+    <div class="Chart" id="chart_div7"></div>
+    <div class="Chart" id="chart_div8"></div>
+    </div>
+    </div>
+    <div class="section-1">
+    <h3>Vinoth C</h3> 
+   <div class="container">
+    <div class="Chart" id="chart_div9"></div>
+    <div class="Chart" id="chart_div10"></div>
+    </div>
+    </div>
+   </div> 
+
+
+
+
+
+
+   Chart
+     {
+// {
+
+// {
+//   const data =new google.visualization.DataTable();
+//       data.addColumn('string', '');
+//       data.addColumn('number', 'MCI Target');
+//       data.addColumn({type: 'number', role: 'annotation'});
+//       data.addColumn('number', 'MCI Achievments');
+//       data.addColumn({type: 'number', role: 'annotation'});
+//       data.addRows([
+//         ["MCI", parseInt(MCITarget), parseInt(MCITarget), oneMCI.length, oneMCI.length],
+//       ]);
+      
+//       var options = {
+//         annotations: {
+//           alwaysOutside: true,
+//           textStyle: {
+//             fontSize: 14,
+//             color: '#000',
+//             auraColor: 'none'
+//           }
+//         },
+//         width:180,
+//         height:400,
+//         colors:["#becc1f","#9a9b9d"],
+//         title: '',
+//         legend: {position: 'none'},
+       
+//         // hAxis: {
+//         //   title: 'Madhesh Maasi',
+//         // },
+        
+//       };
+//   var materialChart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+//   materialChart.draw(data, options);
+//   const data2 =new google.visualization.DataTable();
+//   data2.addColumn('string', '');
+//   data2.addColumn('number', 'Leads Target');
+//   data2.addColumn({type: 'number', role: 'annotation'});
+//   data2.addColumn('number', 'Leads Achievments');
+//   data2.addColumn({type: 'number', role: 'annotation'});
+//   data2.addRows([
+//     ["Leads", parseInt(LeadsTarget),parseInt(LeadsTarget), oneLeads.length, oneLeads.length],
+     
+//   ]);
+
+//   var options2 = {
+//     annotations: {
+//       alwaysOutside: true,
+//       textStyle: {
+//         fontSize: 14,
+//         color: '#000',
+//         auraColor: 'none'
+//       }
+//     },
+//     width:180,
+//     height:400,
+//     colors:["#becc1f","#9a9b9d"],
+//     title: '',
+//     legend: {position: 'none'},
+//     // hAxis: {
+//     //   title: 'Madhesh Maasi',
+//     // },
+//   };
+// var materialChart2 = new google.visualization.ColumnChart(document.getElementById('chart_div2'));
+// materialChart2.draw(data2, options2);
+// }
+
+// //Kamesh
+// const twoLeads = list.filter((list)=>{return (list.SalesRep.Title == "Kamesh M" && list.TargetTypes.length == 1 && list.Date == timeNow)
+// }
+//   ); 
+// // console.log(twoLeads.length);
+// const twoMCI = list.filter((list)=>{return ( list.SalesRep.Title == "Kamesh M" && list.TargetTypes.length >= 0  && list.Date == timeNow)});  
+// // console.log(twoMCI.length);
+
+// {
+//   const data3 =new google.visualization.DataTable();
+//       data3.addColumn('string', '');
+//       data3.addColumn('number', 'MCI Target');
+//       data3.addColumn({type: 'number', role: 'annotation'});
+//       data3.addColumn('number', 'MCI Achievments');
+//       data3.addColumn({type: 'number', role: 'annotation'});
+//       data3.addRows([
+//         ["MCI", parseInt(MCITarget),parseInt(MCITarget), twoMCI.length, twoMCI.length],
+//       ]);
+//       var options3 = { 
+//         annotations: {
+//           alwaysOutside: true,
+//           textStyle: {
+//             fontSize: 14,
+//             color: '#000',
+//             auraColor: 'none'
+//           }
+//         },
+//         width:180,
+//         height:400,
+//         colors:["#becc1f","#9a9b9d"],
+//         title: '',
+//         legend: {position: 'none'},
+//         // hAxis: {
+//         //   title: 'Kamesh M',
+//         // },
+//       };
+//   var materialChart3 = new google.visualization.ColumnChart(document.getElementById('chart_div3'));
+//   materialChart3.draw(data3, options3);
+//   const data4 =new google.visualization.DataTable();
+//   data4.addColumn('string', '');
+//   data4.addColumn('number', 'Leads Target');
+//   data4.addColumn({type: 'number', role: 'annotation'});
+//   data4.addColumn('number', 'Leads Achievments');
+//   data4.addColumn({type: 'number', role: 'annotation'});
+//   data4.addRows([
+//     ["Leads", parseInt(LeadsTarget),parseInt(LeadsTarget), twoLeads.length, twoLeads.length],
+//   ]);
+
+//   var options4 = {
+//     annotations: {
+//       alwaysOutside: true,
+//       textStyle: {
+//         fontSize: 14,
+//         color: '#000',
+//         auraColor: 'none'
+//       }
+//     },
+//     width:180,
+//     height:400,
+//     colors:["#becc1f","#9a9b9d"],
+//     title: '',
+//     legend: {position: 'none'},
+//     // hAxis: {
+//     //   title: 'Kamesh M',
+//     // },
+//   };
+// var materialChart4 = new google.visualization.ColumnChart(document.getElementById('chart_div4'));
+// materialChart4.draw(data4, options4);
+// }
+
+// //Kali
+// const threeLeads = list.filter((list)=>{return (list.SalesRep.Title == "kali muthu" && list.TargetTypes.length == 1 && list.Date == timeNow)
+// }
+//   ); 
+// // console.log(threeLeads.length);
+// const threeMCI = list.filter((list)=>{return ( list.SalesRep.Title == "kali muthu" && list.TargetTypes.length >= 0  && list.Date == timeNow)});  
+// // console.log(threeMCI.length);
+
+// {
+//   const data5 =new google.visualization.DataTable();
+//       data5.addColumn('string', '');
+//       data5.addColumn('number', 'MCI Target');
+//       data5.addColumn({type: 'number', role: 'annotation'});
+//       data5.addColumn('number', 'MCI Achievments');
+//       data5.addColumn({type: 'number', role: 'annotation'});
+      
+//       data5.addRows([
+//         ["MCI",parseInt(MCITarget),parseInt(MCITarget),  threeMCI.length,threeMCI.length],
+//       ]);
+//       var options5 = {
+//         annotations: {
+//           alwaysOutside: true,
+//           textStyle: {
+//             fontSize: 14,
+//             color: '#000',
+//             auraColor: 'none'
+//           }
+//         },
+//         width:180,
+//         height:400,
+//         colors:["#becc1f","#9a9b9d"],
+//         title: '',
+//         legend: {position: 'none'},
+//           // hAxis: {
+//           //   title: 'kali muthu',
+//           // },
+//       };
+//   var materialChart5 = new google.visualization.ColumnChart(document.getElementById('chart_div5'));
+//   materialChart5.draw(data5, options5);
+//   const data6 =new google.visualization.DataTable();
+//   data6.addColumn('string', '');
+//   data6.addColumn('number', 'Leads Target');
+//   data6.addColumn({type: 'number', role: 'annotation'});
+//   data6.addColumn('number', 'Leads Achievments');
+//   data6.addColumn({type: 'number', role: 'annotation'});
+//   data6.addRows([
+//     ["Leads", parseInt(LeadsTarget),parseInt(LeadsTarget), threeLeads.length, threeLeads.length],
+//   ]);
+
+//   var options6 = {
+//     annotations: {
+//       alwaysOutside: true,
+//       textStyle: {
+//         fontSize: 14,
+//         color: '#000',
+//         auraColor: 'none'
+//       }
+//     },
+//     width:180,
+//     height:400,
+//     colors:["#becc1f","#9a9b9d"],
+//     title: '',
+    
+//     legend: {position: 'none'},
+//     // hAxis: {
+//     //   title: 'kali muthu',
+//     // },
+//   };
+// var materialChart6 = new google.visualization.ColumnChart(document.getElementById('chart_div6'));
+// materialChart6.draw(data6, options6);
+// }  
+//  //Chandru
+// const fourLeads = list.filter((list)=>{return (list.SalesRep.Title == "Chandru D" && list.TargetTypes.length == 1 && list.Date == timeNow)
+// }
+//   ); 
+// // console.log(fourLeads.length);
+// const fourMCI = list.filter((list)=>{return ( list.SalesRep.Title == "Chandru D" && list.TargetTypes.length >= 0  && list.Date == timeNow)});  
+// // console.log(fourMCI.length);
+
+// {
+//   const data7 =new google.visualization.DataTable();
+//       data7.addColumn('string', '');
+//       data7.addColumn('number', 'MCI Target');
+//       data7.addColumn({type: 'number', role: 'annotation'});
+//       data7.addColumn('number', 'MCI Achievments');
+//       data7.addColumn({type: 'number', role: 'annotation'});
+//       data7.addRows([
+//         ["MCI", parseInt(MCITarget),parseInt(MCITarget), fourMCI.length, fourMCI.length],
+//       ]);
+//       var options7 = {
+//         annotations: {
+//           alwaysOutside: true,
+//           textStyle: {
+//             fontSize: 14,
+//             color: '#000',
+//             auraColor: 'none'
+//           }
+//         },
+//         width:180,
+//         height:400,
+//         colors:["#becc1f","#9a9b9d"],
+//         title: '',
+//         legend: {position: 'none'},
+//         // hAxis: {
+//         //   title: 'Chandru D',
+//         // },
+//       }; 
+//   var materialChart7 = new google.visualization.ColumnChart(document.getElementById('chart_div7'));
+//   materialChart7.draw(data7, options7);
+//   const data8 =new google.visualization.DataTable();
+//   data8.addColumn('string', '');
+//   data8.addColumn('number', 'Leads Target');
+//   data8.addColumn({type: 'number', role: 'annotation'});
+//   data8.addColumn('number', 'Leads Achievments');
+//   data8.addColumn({type: 'number', role: 'annotation'});
+//   data8.addRows([
+//     ["Leads", parseInt(LeadsTarget),parseInt(LeadsTarget), fourLeads.length, fourLeads.length],
+//   ]); 
+  
+//   var options8 = {
+//     annotations: {
+//       alwaysOutside: true,
+//       textStyle: {
+//         fontSize: 14,
+//         color: '#000',
+//         auraColor: 'none'
+//       }
+//     },
+//     width:180,
+//     height:400,
+//     colors:["#becc1f","#9a9b9d"],
+//     title: '',
+//     legend: {position: 'none'},
+//     // hAxis: {
+//     //   title: 'Chandru D',
+//     // },
+//   };  
+// var materialChart8 = new google.visualization.ColumnChart(document.getElementById('chart_div8'));
+// materialChart8.draw(data8, options8);
+// }
+
+// //Vinoth
+
+// const fiveLeads = list.filter((list)=>{return (list.SalesRep.Title == "Vinoth C" && list.TargetTypes.length == 1 && list.Date == timeNow)
+// }
+//   ); 
+// // console.log(fiveLeads.length);
+// const fiveMCI = list.filter((list)=>{return ( list.SalesRep.Title == "Vinoth C" && list.TargetTypes.length >= 0  && list.Date == timeNow)});  
+// // console.log(fiveMCI.length);
+
+// {
+//   const data9 =new google.visualization.DataTable();
+//       data9.addColumn('string', '');
+//       data9.addColumn('number', 'MCI Target');
+//       data9.addColumn({type: 'number', role: 'annotation'});
+//       data9.addColumn('number', 'MCI Achievments');
+//       data9.addColumn({type: 'number', role: 'annotation'});
+//       data9.addRows([
+//         ["MCI", parseInt(MCITarget), parseInt(MCITarget), fiveMCI.length, fiveMCI.length],
+//       ]);
+//       var options9 = {
+//         annotations: {
+//           alwaysOutside: true,
+//           textStyle: {
+//             fontSize: 14,
+//             color: '#000',
+//             auraColor: 'none'
+//           }
+//         },
+//         width:180,
+//         height:400,
+//         colors:["#becc1f","#9a9b9d"],
+//         title: '',
+//         legend: {position: 'none'},
+//         // hAxis: {
+//         //   title: 'Vinoth C',
+//         // },
+//       };
+//   var materialChart9 = new google.visualization.ColumnChart(document.getElementById('chart_div9'));
+//   materialChart9.draw(data9, options9);
+//   const data10 =new google.visualization.DataTable();
+//   data10.addColumn('string', '');
+//   data10.addColumn('number', 'Leads Target');
+//   data10.addColumn({type: 'number', role: 'annotation'});
+//   data10.addColumn('number', 'Leads Achievments');
+//   data10.addColumn({type: 'number', role: 'annotation'});
+//   data10.addRows([
+//     ["Leads", parseInt(LeadsTarget),parseInt(LeadsTarget), fiveLeads.length, fiveLeads.length],
+//   ]);
+  
+//   var options10 = {
+//     annotations: {
+//       alwaysOutside: true,
+//       textStyle: {
+//         fontSize: 14,
+//         color: '#000',
+//         auraColor: 'none'
+//       }
+//     },
+//     width:180,
+//     height:400,
+//     colors:["#becc1f","#9a9b9d"],
+//     title: '',
+//     legend: {position: 'none'},
+//     // hAxis: {
+//     //   title: 'Vinoth C',
+//     // },
+//   };
+// var materialChart10 = new google.visualization.ColumnChart(document.getElementById('chart_div10'));
+// materialChart10.draw(data10, options10);
+// }
+// }
+  }
